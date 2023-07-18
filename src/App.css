@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  font-family: Roboto;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dashboard {
+  background-color: #f0f2f5;
   display: flex;
-  flex-direction: column;
+  min-height: 100vh;
+}
+
+.dashboard-sidebar-container {
+  flex: 0.2;
+  height: 94vh;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
+.dashboard-sidebar {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: 2px solid #DC2265;
+  padding: 20px;
+  margin-top: 10px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #404047, #1C1C1C);
+  color: #fefefe;
+}
+.sidebar-header {
+  padding-bottom: 10px;
+}
+.dashboard-sidebar ul li {
+  list-style-type: none;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.dashboard-sidebar ul li:hover {
+  background-color: #525256;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.dashboard-content {
+  flex: 0.8;
+  padding-top: 25px;
+}
+
+.dashboard-content-header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-bottom: 10px;
+}
+
+.dashboard-home-btn {
+  padding: 5px;
+  border: 1px solid rgb(237, 37, 137);
+  color: rgb(237, 37, 137);
+  border-radius: 5px;
+  margin-right: 40px;
+}
+.dashboard-home-btn:hover {
+  cursor: pointer;
   color: white;
+  background-color: rgb(237, 37, 137);
 }
 
-.App-link {
-  color: #61dafb;
+.analytics-cards {
+  padding-top: 40px;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 220px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  position: relative;
+}
+.card-heading {
+  padding-bottom: 20px;
+}
+.card-heading h4 {
+  text-align: right;
+  font-weight: 300;
+  color: #888;
+}
+.card-heading h1 {
+  text-align: right;
+  font-weight: 700;
+  color: #344767;
+  margin-top: 10px;
+}
+.card-bottom {
+  padding-top: 20px;
+}
+.card-bottom h4 {
+  font-weight: 300;
+  color: #888;
+}
+.card-icon {
+  height: 60px;
+  width: 60px;
+  background-image: linear-gradient(to bottom, #404047, #1C1C1C);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  top: -15px;
+  left: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.graph-cards {
+  margin-top: 70px;
+  display: flex;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.graph-card {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.graph-img {
+position: relative;
+top: -60px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.graph-card-content {
+  margin-top: -40px;
+}
+
+.graph-section {
+  display: flex;
+  gap: 20px;
 }
