@@ -47,6 +47,7 @@
 .dashboard-content {
   flex: 0.8;
   padding-top: 25px;
+  padding: 10px;
 }
 
 .dashboard-content-header {
@@ -147,4 +148,47 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 .graph-section {
   display: flex;
   gap: 20px;
+}
+
+.pet-category {
+  padding: 10px;
+  background-color: white;
+  margin-top: 50px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.pet-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pet-category-header {
+  background-image: linear-gradient(to right, #DC2265, #EA3C77);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  margin: 0px 10px;
+  position: relative;
+  top: -30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.pet-info-container {
+  padding: 10px;
+}
+
+.pet-info1 {
+  padding: 10px;
+  background-color: #1C1C1C;
+  color: white;
+  border-radius: 5px;
+}
+
+.pet-info2 {
+  padding: 18px 10px;
+  border-radius: 10px;
+  
 }
