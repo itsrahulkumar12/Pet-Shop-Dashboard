@@ -23,7 +23,7 @@ const Dashboard = () => {
                 setShowPets(false);
               }}
               style={{backgroundColor: showDashboard && '#DC2265'}}
-            >
+            > <span style={{marginRight:15}}><i class="fa-solid fa-table-columns"></i></span>
               Dashboard
             </li>
             <li
@@ -34,6 +34,7 @@ const Dashboard = () => {
               }}
               style={{backgroundColor: showPets && '#DC2265'}}
             >
+                <span style={{marginRight:15}}><i class="fa-solid fa-dog"></i></span>
               Pets
             </li>
             <li
@@ -43,7 +44,7 @@ const Dashboard = () => {
                 setShowDashboard(false);
               }}
               style={{backgroundColor: showServices && '#DC2265'}}
-            >
+            ><span style={{marginRight:15}}><i class="fa-solid fa-briefcase-medical"></i></span>
               Services
             </li>
           </ul>
