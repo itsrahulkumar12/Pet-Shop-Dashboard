@@ -12,7 +12,7 @@ const Dashboard = () => {
       <section className="dashboard-sidebar-container">
         <div className="dashboard-sidebar">
           <div className="sidebar-header">
-            <h3>PET SHOP</h3>
+            <h3>PET VET. SHOP</h3>
           </div>
           <hr />
           <ul>
