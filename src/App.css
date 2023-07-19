@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
   font-family: Roboto;
@@ -8,7 +9,7 @@
 }
 
 .dashboard {
-  background-color: #f0f2f5;
+  /* background-color: #f0f2f5; */
   display: flex;
   min-height: 100vh;
 }
@@ -73,6 +74,7 @@
 .analytics-cards {
   padding-top: 40px;
   display: flex;
+  justify-content: center;
   gap: 25px;
   flex-wrap: wrap;
 }
@@ -191,4 +193,293 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 18px 10px;
   border-radius: 10px;
   
+}
+
+.home-page-container h1,h2,h3,h4,h5,h6 {
+  font-family: Nunito !important;
+}
+
+.logo {
+  border: 3px solid #DC2265;
+  color: #DC2265;
+  padding: 5px 5px 5px 0px;
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.home-header {
+  /* background-color: #f0f2f5; */
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  /* background-image: linear-gradient(to bottom, #404047, #1C1C1C); */
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 40px;
+  padding: 8px;
+  
+}
+
+.login-btn {
+  padding: 8px 20px;
+  color: #DC2265;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #DC2265;
+}
+.login-btn:hover {
+  background-color: #DC2265;
+  color: #fff;
+}
+.vet-services-heading {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+.vet-services-heading h3 {
+  font-family: Nunito ;
+}
+.line {
+  height: 1px;
+  width: 80%;
+  background-color: #666;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.service-card {
+  padding: 10px;
+  background-color: #f0f2f5;
+  border-radius: 10px;
+}
+.service-card-content {
+  margin-top: 10px;
+}
+.service-card-content h4 {
+  font-weight: 400;
+  color: #666;
+}
+.service-card-content h5 {
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #03c6c7;
+  color: #f0f2f5;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.dog-food {
+  background-color: #7EBCF0;
+  /* margin-top: 10px; */
+}
+.dog-food img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.cat-foods {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap:10px
+}
+
+/* Base styles for the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-info {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.footer-info h3 {
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+.footer-social {
+  flex: 1;
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 20px;
+}
+
+
+.login-page h1,h2,h3,h4,h5,h6 {
+  font-family: Nunito !important;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+.login-wrapper {
+  border: 3px solid #DC2265;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.image-wrapper {
+  max-width: 500px;
+  ;
+}
+.image-wrapper img {
+  width: 100%;
+  border-radius: 5px;
+}
+.login-container {
+  
+}
+.input-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.input-div input {
+  width: 200px;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.input-div button {
+  padding: 10px 25px;
+  margin-top: 20px;
+  background-color: #DC2265;
+  border: 2px solid #DC2265;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+
+}
+.input-div button:hover {
+  background-color: white;
+  color: #DC2265;
+}
+
+.dashboard-service-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #DC2265;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin-bottom: 30px;
+}
+.service-image-div img {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.service-description h1 {
+  color: #444;
+  margin-bottom: 10px;
+}
+.service-description p {
+  color: #888;
+}
+.service-price h5 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-info {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 510px) {
+  .dashboard-sidebar-container{
+    /* display: none; */
+  }
+  .analytics-cards{
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .graph-section {
+    flex-direction: column;
+  }
+  .dashboard-content {
+    flex: 1;
+    padding-top: 25px;
+    padding: 10px;
+  }
+  .footer-social {
+    margin-top: 20px;
+  }
+
+  .social-links li {
+    margin: 0 8px;
+  }
+
+  .social-links a {
+    font-size: 18px;
+  }
 }

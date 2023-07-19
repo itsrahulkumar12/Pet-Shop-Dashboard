@@ -1,12 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DashboardContent from "./DashboardContent";
 import Services from "./Services";
 import Pets from "./Pets";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+  const navigate = useNavigate();
   const [showDashboard, setShowDashboard] = useState(true);
   const [showPets, setShowPets] = useState(false);
   const [showServices, setShowServices] = useState(false);
+
+  useEffect(()=>{
+    
+  },[])
+
+  const logout = () => {
+    localStorage.clear();
+    navigate('/')
+  }
+
   return (
     <div className="dashboard">
       <section className="dashboard-sidebar-container">
@@ -54,7 +66,10 @@ const Dashboard = () => {
       <section className="dashboard-content">
         <header className="dashboard-content-header">
           <h4 style={{ fontSize: "30px" }}>Dashboard</h4>
-          <h5 className="dashboard-home-btn">Home</h5>
+          <div style={{display:'flex', justifyContent:'center', marginLeft:10}}>
+          <h5 onClick={()=> navigate('/')} className="dashboard-home-btn">Home</h5>
+          <h5 onClick={()=> logout()} className="dashboard-home-btn">Logout</h5>
+          </div>
         </header>
         <hr />
 

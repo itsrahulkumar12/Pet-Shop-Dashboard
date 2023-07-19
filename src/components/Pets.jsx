@@ -3,7 +3,10 @@ import { petdata } from "../data/petdata";
 
 const Pets = () => {
   const [data, setData] = useState(petdata);
-  console.log("PET DATA", data);
+  // console.log("PET DATA", data);
+  const warn = () => {
+    alert("These details can be edited")
+  }
   return (
     <div className="pet-category">
       <div className="pet-category-header">
@@ -24,7 +27,7 @@ const Pets = () => {
             <h5 style={{flex:0.3}}>{item.customerName}</h5>
             <h5 style={{flex:0.4}}>{item.email}</h5>
             <h5 style={{flex:0.2}}>In Process</h5>
-            <h5 style={{flex:0.2}}>Edit</h5>
+            <h5 style={{flex:0.2, textAlign:'center', padding:10, paddingLeft:-10, paddingRight:-10}} className="login-btn" onClick={warn}>Edit</h5>
           </div>
           <hr />
           </React.Fragment>
